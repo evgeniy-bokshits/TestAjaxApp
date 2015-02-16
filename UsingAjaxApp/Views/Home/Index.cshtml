@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Simple Lightbox</title>
+        <link href="@Url.Content("~/Content/css/site.css")" rel="stylesheet" />
+        <script src="~/Scripts/jquery-2.1.3.js"></script>
+        <script type="text/javascript" src="~/Scripts/simple-modal-popup.js"></script>
+    </head>
+    <body>
+            <div id="gallery">
+                <img id="1" src="~/Content/img/1.jpg" class="item" width="120">
+                <img id="2" src="~/Content/img/2.jpg" class="item" width="120">
+                <img id="3" src="~/Content/img/3.jpg" class="item" width="120">
+            </div>
+        <div class="lightbox" id=popup>
+            <div class="box" id=center>
+                <div class="content">
+                    <a class="close">X</a>
+                    <img id=lightbox src="" width="540">
+                    <a class="prev" src="">Previous</a>
+                    <a class="next" src="">Next</a>
+                    <div id="ajaxBusy"><p><img src="~/Content/img/loading.gif"></p></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
